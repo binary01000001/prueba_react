@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
@@ -10,3 +10,18 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+ */
+
+/*  const element = document.createElement('h1');
+ element.innerText = "Estoy programando con fe!";
+
+ const container = document.getElementById('app');
+ container.appendChild(element); */
+
+ import React from 'react'; //create element
+ import ReactDOM from 'react-dom'; //appendChild
+
+ const element = <h1>El mundo es más cruel de lo que parece</h1>;
+ const container = document.getElementById('app');
+
+ ReactDOM.render(element, container);
