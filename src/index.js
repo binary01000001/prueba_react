@@ -20,8 +20,11 @@ serviceWorker.unregister();
 
  import React from 'react'; //create element
  import ReactDOM from 'react-dom'; //appendChild
+ import Badge from './componentes/Badge/Badge'
+ //import "./styles.scss";
 
- const element = <h1>El mundo es más cruel de lo que parece</h1>;
+
+ /* const element = <h1>El mundo es más cruel de lo que parece</h1>; */
  const container = document.getElementById('app');
 
- ReactDOM.render(element, container);
+ ReactDOM.render(<Badge/>, container);
