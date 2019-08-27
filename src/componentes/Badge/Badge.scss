@@ -6,12 +6,26 @@
     width:100%;
     &_header{
         width:80%;
-        background:black;
+        background-color:#7dc900;
         border-radius:10px 10px 0px 0px;
-        color:white;
-        padding:10px 20px;
+        color:green;
+        padding:15px 25px;
         display:flex;
         align-items: center;
         justify-content:center;
+        /* transition: background-color 1s 0s ease; */
+        &--logo{
+            height: 50PX;
+            width:50px;
+            background-color:green;
+            border-radius:50%;
+            margin:10px;
+            transition: background-color 1s 0s ease;
+            transition: transform 0.5s 0s ease;
+        }
     }
+}
+.Badge_header:hover .Badge_header--logo{
+    background-color:greenyellow;
+    transform: translate(-15px, -15px);
 }

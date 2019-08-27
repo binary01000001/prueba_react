@@ -20,6 +20,7 @@ class Badge extends React.Component {
     return (
      <div className="Badge">
        <div className="Badge_header">
+         <div className="Badge_header--logo"></div>
          Esta es la cabecera.
        </div>
        <div className="Badge_body">
