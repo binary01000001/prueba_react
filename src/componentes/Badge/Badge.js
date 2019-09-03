@@ -15,12 +15,13 @@ class Badge extends React.Component {
   }
   alerta = () =>{
     alert('¡Eres un genio!');
-  } */
+  } */ 
   render() {
     return (
      <div className="Badge">
        <div className="Badge_header">
          <div className="Badge_header--logo"></div>
+         <div className="Badge_header--logo2"></div>
          Esta es la cabecera.
        </div>
        <div className="Badge_body">

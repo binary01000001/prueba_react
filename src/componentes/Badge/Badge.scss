@@ -13,19 +13,39 @@
         display:flex;
         align-items: center;
         justify-content:center;
-        /* transition: background-color 1s 0s ease; */
         &--logo{
             height: 50PX;
             width:50px;
             background-color:green;
             border-radius:50%;
             margin:10px;
-            transition: background-color 1s 0s ease;
-            transition: transform 0.5s 0s ease;
+            transition: 0.3s 0s ease;
+        }
+        &--logo2{
+            height: 50PX;
+            width:50px;
+            border-radius:50%;
+            margin:10px;
+            animation-name:loguito;
+            animation-duration: 0.5s;
+            animation-delay:0s;
+            animation-iteration-count:infinite;
+            animation-direction: alternate;
+            animation-timing-function:ease;
         }
     }
 }
 .Badge_header:hover .Badge_header--logo{
     background-color:greenyellow;
-    transform: translate(-15px, -15px);
+    transform: translate(-30px, -30px);
+}
+@keyframes loguito{
+    0%{
+        background-color:pink;
+        transform: translate(45px, 45px);
+    }
+    100%{
+        background-color:rgb(211, 97, 116);
+        transform:translate(-45px, -45px);
+    }
 }

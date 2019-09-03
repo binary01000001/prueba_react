@@ -25,6 +25,16 @@ serviceWorker.unregister();
 
 
  /* const element = <h1>El mundo es más cruel de lo que parece</h1>; */
+
+ var elemento = React.createElement('div', {className:"chido", style:{display:'flex', justifyContent:'center'}},
+    React.createElement('div', {style:{height:'200px', width:'400px', display:'flex', alignItems:'center', justifyContent:'center', border:'1px solid red'}},
+    React.createElement('h4', {style:{color:"red"}},'ya te cargo el payaso'),
+    ),
+    
+ );
+
  const container = document.getElementById('app');
+ const contenedor = document.getElementById('otro');
 
  ReactDOM.render(<Badge/>, container);
+ ReactDOM.render(elemento, contenedor);
